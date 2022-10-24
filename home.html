@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap-5.2.2/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="bootstrap-5.2.2/dist/css/bootstrap-utilities.css" rel="stylesheet">
+  <link href="bootstrap-5.2.2/dist/css/bootstrap-utilities.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <title>MEAL-N-BOX</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="slider.css" rel="stylesheet">
+  <link href="storeFeat.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--Navigation Menus -->
+  <div>
+    <nav class="navbar navbar-dark dropM fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">My Tray</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">My Order</button>
+        </div>
+        <div class="offcanvas offcanvas-start text-bg-dark divMenu" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body divMenu">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active lMenuOpt" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Favorites</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                  <li><a class="dropdown-item" href="#">Lunch</a></li>
+                  <li><a class="dropdown-item" href="#">Dinner</a></li>
+                  <li><a class="dropdown-item" href="#">Snacks</a></li>
+                  <li><a class="dropdown-item" href="#">Desserts</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">What's New</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Accounts
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Register</a></li>
+                  <li><a class="dropdown-item" href="#">Be a Partner</a></li>
+                  <li><a class="dropdown-item" href="#">Be a Rider</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--Feature Meals slide-->
+  <div>
+    <section id="slider" class="mealFeature">
+      <div class="container">
+        <div class="subcontainer">
+          <div class="slider-wrapper">
+            <div style="height:50px;">
+              <br>
+            </div>
+            <div>
+              <h4>Featured Meals</h4>
+              <hr>
+            </div>
+            <div class="my-slider">
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu001" id="Menu001">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Chicken Curry</h5>
+                    <p>Php 99.00</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu002" id="Menu002">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Beef Caldereta</h5>
+                    <p>Php 150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu003" id="Menu003">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Adobo</h5>
+                    <p>Php 90.00</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu004" id="Menu004">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Spicy Laing</h5>
+                    <p>Php 59.00</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu005" id="Menu005">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Tokwa't Baboy</h5>
+                    <p>Php 59.00</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu006" id="Menu006">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Pinangat</h5>
+                    <p>Php 79.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu007" id="Menu007">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Ginataang Kalabasa</h5>
+                    <p>Php 49.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu008" id="Menu008">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Pork Menudo</h5>
+                    <p>Php 99.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu009 " id="Menu009">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Tapsilog</h5>
+                    <p>Php 89.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu010" id="Menu010">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Ginisang Ampalaya</h5>
+                    <p>Php 59.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu011" id="Menu011">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Fried Tilapya</h5>
+                    <p>Php 49.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu012" id="Menu012">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Beef Salpicao</h5>
+                    <p>Php 159.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu013" id="Menu013">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Beef Adobo</h5>
+                    <p>Php 149.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu014" id="Menu014">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Lechon Paksiw</h5>
+                    <p>Php 119.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="slide eHovr">
+                  <div class="menu-img Menu015" id="Menu015">
+                    <a href="#">ORDER NOW</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h5>Spaghetti</h5>
+                    <p>Php 59.00</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  </div>
+
+  <!--Feature Stores-->
+  <div class="fvendor">
+    <h4>Featured Sellers</h4>
+    <hr>
+  </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col order-last">
+        <div class="slide eHov" >
+          <div class="vendor-img Vendor001">
+            <a href="#">ORDER NOW</a>
+          </div>
+          <br>
+          <div>
+            <h4>Jane Kitchen</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="slide eHov"">
+          <div class="vendor-img Vendor002">
+            <a href="#">ORDER NOW</a>
+          </div>
+          <br>
+          <div>
+            <h4>Mamy Pasta</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="slide eHov"">
+          <div class="vendor-img Vendor003">
+            <a href="#">ORDER NOW</a>
+          </div>
+          <br>
+          <div>
+            <h4>Lunes Canteen</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="slide eHov">
+          <div class="vendor-img Vendor004">
+            <a href="#">ORDER NOW</a>
+          </div>
+          <br>
+          <div>
+            <h4>Palayok Buffet</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="slide eHov"">
+          <div class="vendor-img Vendor005">
+            <a href="#">ORDER NOW</a>
+          </div>
+          <br>
+          <div>
+            <h5>Road Side Eatery</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col order-first">
+        <div class="slide eHov">
+          <div class="vendor-img Vendor006">
+            <a href="#">ORDER NOW</a>
+          </div>
+          <br>
+          <div>
+            <h4>E-meal Box</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="bootstrap-5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap-5.2.2/dist/js/bootstrap.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+<script src="imageslide.js"></script>
+
+</html>

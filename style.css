@@ -1,0 +1,78 @@
+.dropMenu {
+    background-color:rgb(13, 228, 210);
+    color: black;
+    font-family: Arial;
+    font-size: 30px;
+    width: 60%;
+    float:left;
+}
+.dropM{
+    background-color:rgb(18, 245, 245);
+}
+
+.lMenuOpt{
+    font-size: 20px;
+    font-family: Arial;
+    color: rgb(18, 245, 245);
+}
+
+.divMenu{
+opacity: 60;
+}
+
+.logo{
+    width:100px;
+    height: auto;
+}
+
+.menuPic{
+width: 180px;
+}
+
+.sideMenu {
+    background-color:rgb(13, 228, 210);
+    color: black;
+    font-family: Arial;
+    font-size: 30px;
+    width: 40%;
+    height: 50px;
+    float: right;
+    text-align: right;
+}
+
+.sideMenu1{
+    background-color:rgb(20, 228, 183);
+    height: 220px;
+    margin-top: 20px;
+    padding-top: 5px0;
+    padding-bottom: 5px;
+}
+
+.lsideOption{
+    float:inline-end
+}
+
+.slideMenu{
+    background-color: rgb(102, 101, 101);
+    height: 300px;
+    margin-top: 20px;
+}
+
+.tableImg{
+    padding: 5px;
+    margin-right: 10px ;
+}
+.divSpace{
+    background-color: grey;
+    padding:10px;
+}
+p{
+    color:orangered;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.fvendor {
+    padding-left: 130px;
+    padding-right: 130px;
+}
