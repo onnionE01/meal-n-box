@@ -73,6 +73,14 @@ p{
 }
 
 .fvendor {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.fPrice{
+    border: 2px solid rgb(32, 248, 201);
+    border-radius: 5px;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
 }
