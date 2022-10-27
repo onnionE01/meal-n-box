@@ -84,3 +84,10 @@ p{
     justify-content: center;
     text-align: center;
 }
+
+.nav-button{
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(51, 50, 50);
+}

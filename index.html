@@ -6,19 +6,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MEAL-N-BOX</title>
+
   <link href="bootstrap-5.2.2/dist/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap-5.2.2/dist/css/bootstrap-utilities.css" rel="stylesheet">
   <link href="bootstrap-5.2.2/dist/css/bootstrap-utilities.min.css" rel="stylesheet">
+
+  <!--for tiny slider from cdnjs.com-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" rel="stylesheet">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <title>MEAL-N-BOX</title>
+  
   <link href="style.css" rel="stylesheet">
   <link href="slider.css" rel="stylesheet">
   <link href="storeFeat.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <!--Navigation Menus -->
+  <!--Navigation Menus from bootstrap -->
   <div>
     <nav class="navbar navbar-dark dropM fixed-top">
       <div class="container-fluid">
@@ -30,8 +35,8 @@
           <img src= "logo.png" height="50px" />
         </div>
         <div>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">My Tray</button>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">My Order</button>
+          <button class="btn btn-outline-success my-2 my-sm-0 nav-button" type="submit"><img src="tray.png" height="40px" width="40px" />My Tray</button>
+          <button class="btn btn-outline-success my-2 my-sm-0 nav-button" type="submit"><img src="orderico.png" height="40px" width="40px" />My Order</button>
         </div>
         <div class="offcanvas offcanvas-start text-bg-dark divMenu" tabindex="-1" id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel">
@@ -49,7 +54,7 @@
                 <a class="nav-link active lMenuOpt" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Favorites</a>
+                <a class="nav-link" href="favorites.html">Favorites</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -57,15 +62,17 @@
                   Menu
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Breakfast</a></li>
-                  <li><a class="dropdown-item" href="#">Lunch</a></li>
-                  <li><a class="dropdown-item" href="#">Dinner</a></li>
-                  <li><a class="dropdown-item" href="#">Snacks</a></li>
-                  <li><a class="dropdown-item" href="#">Desserts</a></li>
+                  <li><a class="dropdown-item" id="categoryID" href="menu.html">Best Seller</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" id="categoryID" href="menu.html">Breakfast</a></li>
+                  <li><a class="dropdown-item" id="categoryID" href="menu.html">Lunch</a></li>
+                  <li><a class="dropdown-item" id="categoryID" href="menu.html">Dinner</a></li>
+                  <li><a class="dropdown-item" id="categoryID" href="menu.html">Snacks</a></li>
+                  <li><a class="dropdown-item" id="categoryID" href="menu.html">Desserts</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">What's New</a></li>
+                  <li><a class="dropdown-item" id="categoryID" href="#">What's New</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -92,6 +99,7 @@
       </div>
     </nav>
   </div>
+
   <!--Featured Meals slide-->
   <div>
     <section id="slider" class="mealFeature">
@@ -381,11 +389,17 @@
   </div>
 
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <script src="bootstrap-5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="bootstrap-5.2.2/dist/js/bootstrap.bundle.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!--for the tiny slider cdnjs.com-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 <script src="imageslide.js"></script>
 
