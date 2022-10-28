@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +17,7 @@
 </head>
 
 <body>
+  <!--Navigation Menus from bootstrap -->
   <div>
     <nav class="navbar navbar-dark dropM fixed-top">
       <div class="container-fluid">
@@ -30,8 +29,10 @@
           <img src="logo.png" height="50px" />
         </div>
         <div>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">My Tray</button>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">My Order</button>
+          <button class="btn btn-outline-success my-2 my-sm-0 nav-button" type="submit"><img src="tray.png"
+              height="40px" width="40px" />My Tray</button>
+          <button class="btn btn-outline-success my-2 my-sm-0 nav-button" type="submit"><img src="orderico.png"
+              height="40px" width="40px" />My Order</button>
         </div>
         <div class="offcanvas offcanvas-start text-bg-dark divMenu" tabindex="-1" id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel">
@@ -49,7 +50,7 @@
                 <a class="nav-link active lMenuOpt" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Favorites</a>
+                <a class="nav-link" href="favorites.html">Favorites</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -57,18 +58,20 @@
                   Menu
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" id="categoryID" href="#">Best Seller</a></li>
-                  <li><a class="dropdown-item" id="categoryID" href="#">Breakfast</a></li>
-                  <li><a class="dropdown-item" id="categoryID" href="#">Lunch</a></li>
-                  <li><a class="dropdown-item" id="categoryID" href="#">Dinner</a></li>
-                  <li><a class="dropdown-item" id="categoryID" href="#">Snacks</a></li>
-                  <li><a class="dropdown-item" id="categoryID" href="#">Desserts</a></li>
+                  <li><a class="dropdown-item" onclick="changeMenu('best-seller')">Best Seller</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" onclick="changeMenu('breakfast')">Breakfast</a></li>
+                  <li><a class="dropdown-item" onclick="changeMenu('lunch')">Lunch</a></li>
+                  <li><a class="dropdown-item" onclick="changeMenu('dinner')">Dinner</a></li>
+                  <li><a class="dropdown-item" onclick="changeMenu('snacks')">Snacks</a></li>
+                  <li><a class="dropdown-item" onclick="changeMenu('dessert')">Desserts</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">What's New</a></li>
+                  <li><a class="dropdown-item" onclick="changeMenu('new')">What's New</a></li>
                 </ul>
               </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -94,25 +97,26 @@
     </nav>
   </div>
 
+
   <div class="main-menu-container">
     <div class="menu-category">
       <div>
         <h4>MENUS</h4>
       </div>
       <div class="menu-category1">
-        <div class="menu-category2" onclick="myFunctionA()" type="submit">Best Seller</div>
+        <div class="menu-category2" onclick="Selector('best-seller')"> Best Seller</div>
         <hr>
-        <div class="menu-category2" id="categoryID" onclick="myFunctionB" type="submit">Breakfast</div>
-        <div class="menu-category2" id="categoryID" onclick="myFunctionC" type="submit">Lunch</div>
-        <div class="menu-category2" id="categoryID" onclick="myFunctionD" type="submit">Dinner</div>
-        <div class="menu-category2" id="categoryID" onclick="selector()" type="submit">Snacks</div>
-        <div class="menu-category2" id="categoryID" onclick="selector()" type="submit">Desserts</div>
+        <div class="menu-category2" onclick="Selector('breakfast')">Breakfast</div>
+        <div class="menu-category2" onclick="Selector('lunch')">Lunch</div>
+        <div class="menu-category2" onclick="Selector('dinner')">Dinner</div>
+        <div class="menu-category2" onclick="Selector('snacks')">Snacks</div>
+        <div class="menu-category2" onclick="Selector('dessert')">Desserts</div>
         <hr>
-        <div class="menu-category2" id="categoryID" onclick="selector()" type="submit"><a class="dropdown-item" onclick="selector()" id="categoryID" href="#">What's New</a></div>
+        <div class="menu-category2" onclick="Selector('new)"> What's New</div>
       </div>
     </div>
 
-    <div class="product-list-best" id="best">
+    <div class="product-list-best" id="best-seller">
       <div>
         <h4>Best Seller</h4>
         <hr>
@@ -273,7 +277,7 @@
         <h4>Lunch Menu</h4>
         <hr>
       </div>
-      
+
       <div class="container text-center vendor-feat">
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
@@ -352,7 +356,7 @@
         <h4>Dinner Menu</h4>
         <hr>
       </div>
-      
+
       <div class="container text-center vendor-feat">
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
@@ -362,7 +366,7 @@
               </div>
             </div>
           </div>
-          <div class="col per-col-prod">
+          <div class="col per-col-prod best-seller">
             <div>
               <h4>Chicken Curry</h4>
               <h5>Price:159.00</h5>
@@ -428,79 +432,18 @@
   </div>
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="bootstrap-5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="bootstrap-5.2.2/dist/js/bootstrap.bundle.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!--for the tiny slider cdnjs.com-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 <script src="imageslide.js"></script>
 <script src="menu.js"></script>
-
-<script>
-
-function myFunctionA() {
-  var c1= document.getElementById("best");
-      c2= document.getElementById("breakfast");
-      c3= document.getElementById("lunch");
-      c4= document.getElementById("dinner");
-
-  if (c1.style.display === "none") {
-    c1.style.display="block"
-    c2.style.display = "none";
-    c3.style.display="none"
-    c4.style.display="none"
-  } else {
-    c1.style.display = "block";
-  }
-}
-
-function myFunctionB() {
-  var c1= document.getElementById("best");
-      c2= document.getElementById("breakfast");
-      c3= document.getElementById("lunch");
-      c4= document.getElementById("dinner");
-
-  if (c2.style.display === "none") {
-    c1.style.display="none"
-    c2.style.display = "block";
-    c3.style.display="none"
-    c4.style.display="none"
-  } else {
-    c2.style.display = "block";
-  }
-}
-
-function myFunctionC() {
-  var c1= document.getElementById("best");
-      c2= document.getElementById("breakfast");
-      c3= document.getElementById("lunch");
-      c4= document.getElementById("dinner");
-
-  if (c3.style.display === "none") {
-    c1.style.display="none"
-    c2.style.display = "none";
-    c3.style.display="block"
-    c4.style.display="none"
-  } else {
-    c3.style.display = "block";
-  }
-}
-function myFunctionD() {
-  var c1= document.getElementById("best");
-      c2= document.getElementById("breakfast");
-      c3= document.getElementById("lunch");
-      c4= document.getElementById("dinner");
-
-  if (c4.style.display === "none") {
-    c1.style.display="none"
-    c2.style.display = "none";
-    c3.style.display="none"
-    c4.style.display="block"
-  } else {
-    c4.style.display = "block";
-  }
-}
-</script>
 
 </html>
