@@ -20,6 +20,9 @@ let menuSlide=tns({
             gutter:20
         },
         480: {
+            items:4
+        },
+        360: {
             items:3
         }
     }
