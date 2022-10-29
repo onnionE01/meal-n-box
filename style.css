@@ -96,7 +96,7 @@ p{
 .nav-button{
     border: none;
     font-family: Arial;
-    font-size: 18px;
+    font-size: 80%;
     font-weight: bolder;
     color: rgb(241, 240, 240);
     background-color: #067e6e;
@@ -105,7 +105,7 @@ p{
 .nav-button:hover {
     border:none ;
     font-family: Arial;
-    font-size: 18px;
+    font-size: 80%;
     font-weight: bolder;
     color: rgb(241, 240, 240);
     background-color: #07f8d8;
@@ -122,4 +122,10 @@ p{
     background-color: #41b3a3;
     width: 200px;
     float: right;
+}
+
+.my-order-divover{
+
+    z-index: 2400;
+
 }

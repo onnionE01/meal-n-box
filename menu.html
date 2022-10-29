@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-ico" href="my-icon.ico" />
+  <title>MEAL-N-BOX</title>
+
   <link href="bootstrap-5.2.2/dist/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap-5.2.2/dist/css/bootstrap-utilities.css" rel="stylesheet">
   <link href="bootstrap-5.2.2/dist/css/bootstrap-utilities.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" rel="stylesheet">
-
-  <title>MEAL-N-BOX</title>
-
+ 
   <link href="style.css" rel="stylesheet">
   <link href="slider.css" rel="stylesheet">
   <link href="storeFeat.css" rel="stylesheet">
@@ -27,7 +28,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div>
-          <img src="logo.png" height="50px" />
+          <img src="site-logo.png" height="60px" />
         </div>
         <div>
           <button class="btn btn-outline-success my-2 my-sm-0 nav-button" type="submit"><img src="tray.png"
@@ -102,7 +103,7 @@
   <div class="main-menu-container">
     <div class="menu-category">
       <div>
-        <h4>MENUS</h4>
+        <h4>MENU</h4>
       </div>
       <div class="menu-category1">
         <div class="menu-category2" onclick="Selector('best-seller')"> Best Seller</div>
@@ -113,18 +114,46 @@
         <div class="menu-category2" onclick="Selector('snacks')">Snacks</div>
         <div class="menu-category2" onclick="Selector('dessert')">Desserts</div>
         <hr>
-        <div class="menu-category2" onclick="Selector('new)"> What's New</div>
+        <div class="menu-category2" onclick="Selector('new')"> What's New</div>
       </div>
     </div>
 
     <!--BEST SELLERS MENU-->
-    <div class="product-list-best" id="best-seller">
+    <div class="product-list" id="best-seller">
       <div>
         <h4>Best Seller</h4>
         <hr>
       </div>
 
       <div class="container text-center vendor-feat">
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu023 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Lumpian Shanghai</h4>
+              <hr>
+              <h5>Price:<b> 49.00</b></h5>
+              <hr>
+              <h6>By:Road Side Eatery</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
@@ -147,7 +176,7 @@
               <form class="myOrder" Id="addorder">
                 <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
                 <hr>
-                <button class="btn btn-success" type="submit">Add Order</button>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
               </form>
             </div>
           </div>
@@ -175,7 +204,7 @@
               <form class="myOrder" Id="addorder">
                 <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
                 <hr>
-                <button class="btn btn-success" type="submit">Add Order</button>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
               </form>
             </div>
           </div>
@@ -203,7 +232,7 @@
               <form class="myOrder" Id="addorder">
                 <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
                 <hr>
-                <button class="btn btn-success" type="submit">Add Order</button>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
               </form>
             </div>
           </div>
@@ -223,7 +252,7 @@
               <hr>
               <h5>Price:<b>99.00</b></h5>
               <hr>
-              <h6>By:Jane Kitchen</h6>
+              <h6>By:Mamy Pasta</h6>
             </div>
           </div>
           <div class="col order-last per-col-prod">
@@ -231,7 +260,7 @@
               <form class="myOrder" Id="addorder">
                 <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
                 <hr>
-                <button class="btn btn-success" type="submit">Add Order</button>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
               </form>
             </div>
           </div>
@@ -259,7 +288,7 @@
               <form class="myOrder" Id="addorder">
                 <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
                 <hr>
-                <button class="btn btn-success" type="submit">Add Order</button>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
               </form>
             </div>
           </div>
@@ -270,7 +299,7 @@
     </div>
 
 
-    <div class="product-list-breakfast" id="breakfast">
+    <div class="product-list" id="breakfast">
       <div>
         <h4>Breakfast Menu</h4>
         <hr>
@@ -298,7 +327,7 @@
               <form class="myOrder" Id="addorder">
                 <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
                 <hr>
-                <button class="btn btn-success" type="submit">Add Order</button>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
               </form>
             </div>
           </div>
@@ -326,7 +355,7 @@
               <form class="myOrder" Id="addorder">
                 <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
                 <hr>
-                <button class="btn btn-success" type="submit">Add Order</button>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
               </form>
             </div>
           </div>
@@ -336,7 +365,7 @@
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
               <div class="Menu020 product-img">
-                <a href="#">CHECK MENU</a>
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
@@ -346,7 +375,7 @@
               <hr>
               <h5>Price:<b>59.00</b></h5>
               <hr>
-              <h6>By:Mamy Pasta</h6>
+              <h6>By:Palayok Buffet</h6>
             </div>
           </div>
           <div class="col order-last per-col-prod">
@@ -354,7 +383,7 @@
               <form class="myOrder" Id="addorder">
                 <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
                 <hr>
-                <button class="btn btn-success" type="submit">Add Order</button>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
               </form>
             </div>
           </div>
@@ -402,7 +431,7 @@
               <hr>
               <h5>Price:<b>59.00</b></h5>
               <hr>
-              <h6>By:Lunes Canteen</h6>
+              <h6>By:Palayok Buffet</h6>
             </div>
           </div>
           <div class="col order-last per-col-prod">
@@ -410,17 +439,17 @@
               <form class="myOrder" Id="addorder">
                 <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
                 <hr>
-                <button class="btn btn-success" type="submit">Add Order</button>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
               </form>
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
 
-<!--LUNCH MENUS-->
-    <div class="product-list-lunch" id="lunch">
+    <!--LUNCH MENUS-->
+    <div class="product-list" id="lunch">
       <div>
         <h4>Lunch Menu</h4>
         <hr>
@@ -448,7 +477,7 @@
               <form class="myOrder" Id="addorder">
                 <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
                 <hr>
-                <button class="btn btn-success" type="submit">Add Order</button>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
               </form>
             </div>
           </div>
@@ -476,7 +505,7 @@
               <form class="myOrder" Id="addorder">
                 <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
                 <hr>
-                <button class="btn btn-success" type="submit">Add Order</button>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
               </form>
             </div>
           </div>
@@ -485,32 +514,124 @@
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
+              <div class="Menu007 product-img">
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
           <div class="col per-col-prod">
             <div>
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
+              <h4>Ginataang Kalabasa</h4>
+              <hr>
+              <h5>Price:<b>59.00</b></h5>
+              <hr>
+              <h6>By:Lunes Canteen</h6>
             </div>
-
           </div>
           <div class="col order-last per-col-prod">
-            <div>
-              <a href="#">ADD ORDER</a>
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
             </div>
           </div>
         </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu008 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Pork Menudo</h4>
+              <hr>
+              <h5>Price:<b>99.00</b></h5>
+              <hr>
+              <h6>By:Road Side Eatery</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu006 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Pinangat</h4>
+              <hr>
+              <h5>Price:<b>120.00</b></h5>
+              <hr>
+              <h6>By:Palayok Buffet</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu012 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Beef Salpicao</h4>
+              <hr>
+              <h5>Price:<b>159.00</b></h5>
+              <hr>
+              <h6>By:E-Meal Box</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
 
     </div>
 
-<!--Dinner Meals-->
-    <div class="product-list-dinner" id="dinner">
-  
+    <!--Dinner Meals-->
+    <div class="product-list" id="dinner">
+
       <div>
         <h4>Dinner Menu</h4>
         <hr>
@@ -520,22 +641,28 @@
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
+              <div class="Menu002 product-img">
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
           <div class="col per-col-prod best-seller">
             <div>
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
+              <h4>Beef Kaldereta</h4>
+              <hr>
+              <h5>Price:<b>159.00</b></h5>
+              <hr>
+              <h6>By:E-Meal Box</h6>
             </div>
 
           </div>
           <div class="col order-last per-col-prod">
-            <div>
-              <a href="#">ADD ORDER</a>
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
             </div>
           </div>
         </div>
@@ -543,21 +670,27 @@
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
+              <div class="Menu005 product-img">
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
           <div class="col per-col-prod">
-            <div class="">
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
+            <div>
+              <h4>Tokwa't Baboy</h4>
+              <hr>
+              <h5>Price:<b>79.00</b></h5>
+              <hr>
+              <h6>By:Jane Kitchen</h6>
             </div>
           </div>
           <div class="col order-last per-col-prod">
-            <div class="">
-              <a href="#">ADD ORDER</a>
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
             </div>
           </div>
         </div>
@@ -565,31 +698,121 @@
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
+              <div class="Menu013 product-img">
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
           <div class="col per-col-prod">
             <div>
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
+              <h4>Beef Adobo</h4>
+              <hr>
+              <h5>Price:<b>149.00</b></h5>
+              <hr>
+              <h6>By:E-Meal Box</h6>
             </div>
-
           </div>
           <div class="col order-last per-col-prod">
-            <div>
-              <a href="#">ADD ORDER</a>
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
             </div>
           </div>
         </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu014 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Lechon Kawali</h4>
+              <hr>
+              <h5>Price:<b>119.00</b></h5>
+              <hr>
+              <h6>By:E-Meal Box</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu023 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Lumpiang Shanghai</h4>
+              <hr>
+              <h5>Price:<b>59.00</b></h5>
+              <hr>
+              <h6>By:Lunes Canteen</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu027 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Chicken Cordon Bleu</h4>
+              <hr>
+              <h5>Price:<b>120.00</b></h5>
+              <hr>
+              <h6>By:Mamy Pasta</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
     <!--Snacks-->
-    <div class="product-list-dinner" id="snacks">
+    <div class="product-list" id="snacks">
       <div>
         <h4>Snacks</h4>
         <hr>
@@ -599,22 +822,27 @@
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
+              <div class="Menu015 product-img">
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
           <div class="col per-col-prod best-seller">
             <div>
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
+              <h4>Spaghetti</h4>
+              <hr>
+              <h5>Price:<b>59.00</b></h5>
+              <hr>
+              <h6>By:Mamy Pasta</h6>
             </div>
-
           </div>
           <div class="col order-last per-col-prod">
-            <div>
-              <a href="#">ADD ORDER</a>
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
             </div>
           </div>
         </div>
@@ -622,21 +850,27 @@
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
+              <div class="Menu022 product-img">
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
           <div class="col per-col-prod">
-            <div class="">
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
+            <div>
+              <h4>Turon</h4>
+              <hr>
+              <h5>Price:<b>20.00</b></h5>
+              <hr>
+              <h6>By:Road Side Eatery</h6>
             </div>
           </div>
           <div class="col order-last per-col-prod">
-            <div class="">
-              <a href="#">ADD ORDER</a>
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
             </div>
           </div>
         </div>
@@ -644,56 +878,150 @@
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
+              <div class="Menu020 product-img">
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
           <div class="col per-col-prod">
             <div>
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
+              <h4>Pancit Canton</h4>
+              <hr>
+              <h5>Price:<b>49.00</b></h5>
+              <hr>
+              <h6>By:Road Side Eatery</h6>
             </div>
-
           </div>
           <div class="col order-last per-col-prod">
-            <div>
-              <a href="#">ADD ORDER</a>
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
             </div>
           </div>
         </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu017 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Cheesy Baked Mac</h4>
+              <hr>
+              <h5>Price:<b>99.00</b></h5>
+              <hr>
+              <h6>By:Mamy Pasta</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu016 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Creamy Carbonara</h4>
+              <hr>
+              <h5>Price:<b>89.00</b></h5>
+              <hr>
+              <h6>By:Mamy Pasta</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu025 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Classic Puto</h4>
+              <hr>
+              <h5>Price: <b> 50.00</b></h5>
+              <hr>
+              <h6>By:Palayok Buffet</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
     <!--desserts-->
-    <div class="product-list-dinner" id="dessert">
+    <div class="product-list" id="dessert">
       <div>
         <h4>Desserts</h4>
         <hr>
       </div>
-
       <div class="container text-center vendor-feat">
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
+              <div class="Menu018 product-img">
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
-          <div class="col per-col-prod best-seller">
+          <div class="col per-col-prod">
             <div>
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
+              <h4>Casava Cake</h4>
+              <hr>
+              <h5>Price:<b> 100.00</b></h5>
+              <hr>
+              <h6>By:Palayok Buffet</h6>
             </div>
-
           </div>
           <div class="col order-last per-col-prod">
-            <div>
-              <a href="#">ADD ORDER</a>
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
             </div>
           </div>
         </div>
@@ -701,21 +1029,27 @@
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
+              <div class="Menu024 product-img">
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
           <div class="col per-col-prod">
-            <div class="">
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
+            <div>
+              <h4>Leche Flan</h4>
+              <hr>
+              <h5>Price: <b> 90.00</b></h5>
+              <hr>
+              <h6>By:Palayok Buffet</h6>
             </div>
           </div>
           <div class="col order-last per-col-prod">
-            <div class="">
-              <a href="#">ADD ORDER</a>
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
             </div>
           </div>
         </div>
@@ -723,109 +1057,243 @@
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
+              <div class="Menu019 product-img">
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
           <div class="col per-col-prod">
             <div>
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
+              <h4>Mango Graham Float</h4>
+              <hr>
+              <h5>Price: <b> 120.00</b></h5>
+              <hr>
+              <h6>By:Mamy Pasta</h6>
             </div>
-
           </div>
           <div class="col order-last per-col-prod">
-            <div>
-              <a href="#">ADD ORDER</a>
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
             </div>
           </div>
         </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu021 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Sapin-sapin</h4>
+              <hr>
+              <h5>Price: <b> 80.00</b></h5>
+              <hr>
+              <h6>By:Palayok Buffet</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu028 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Maja Blanca</h4>
+              <hr>
+              <h5>Price: <b> 60.00</b></h5>
+              <hr>
+              <h6>By:Palayok Buffet</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu029 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Chocolate Brownies</h4>
+              <hr>
+              <h5>Price: <b> 120.00</b></h5>
+              <hr>
+              <h6>By:Jane Kitchen</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
     <!--whats New-->
-    <div class="product-list-dinner" id="new">
+    <div class="product-list" id="new">
       <div>
         <h4>New Meals</h4>
         <hr>
       </div>
 
       <div class="container text-center vendor-feat">
-        <div class="row per-row-prod">
-          <div class="col order-first per-col-prod">
-            <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
-              </div>
-            </div>
-          </div>
-          <div class="col per-col-prod best-seller">
-            <div>
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
-            </div>
-
-          </div>
-          <div class="col order-last per-col-prod">
-            <div>
-              <a href="#">ADD ORDER</a>
-            </div>
-          </div>
-        </div>
 
         <div class="row per-row-prod">
           <div class="col order-first per-col-prod">
             <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
-              </div>
-            </div>
-          </div>
-          <div class="col per-col-prod">
-            <div class="">
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
-            </div>
-          </div>
-          <div class="col order-last per-col-prod">
-            <div class="">
-              <a href="#">ADD ORDER</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row per-row-prod">
-          <div class="col order-first per-col-prod">
-            <div class="slide eHov">
-              <div class="Menu001 product-img">
-                <a href="#">CHECK MENU</a>
+              <div class="Menu028 product-img">
+                <a href="#">ORDER NOW</a>
               </div>
             </div>
           </div>
           <div class="col per-col-prod">
             <div>
-              <h4>Chicken Curry</h4>
-              <h5>Price:159.00</h5>
-              <h5>Product By:Jane Kitchen</h5>
+              <h4>Maja Blanca</h4>
+              <hr>
+              <h5>Price: <b> 60.00</b></h5>
+              <hr>
+              <h6>By:Palayok Buffet</h6>
             </div>
-
           </div>
           <div class="col order-last per-col-prod">
-            <div>
-              <a href="#">ADD ORDER</a>
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
             </div>
           </div>
         </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu027 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Chicken Cordon Bleu</h4>
+              <hr>
+              <h5>Price: <b> 120.00</b></h5>
+              <hr>
+              <h6>By:Mamy Pasta</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu006 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Pinangat</h4>
+              <hr>
+              <h5>Price: <b> 120.00</b></h5>
+              <hr>
+              <h6>By:Palayok Buffet</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row per-row-prod">
+          <div class="col order-first per-col-prod">
+            <div class="slide eHov">
+              <div class="Menu030 product-img">
+                <a href="#">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col per-col-prod">
+            <div>
+              <h4>Chicken Pochero</h4>
+              <hr>
+              <h5>Price: <b> 120.00</b></h5>
+              <hr>
+              <h6>By:Palayok Buffet</h6>
+            </div>
+          </div>
+          <div class="col order-last per-col-prod">
+            <div class="addorder-div">
+              <form class="myOrder" Id="addorder">
+                <input class="order-qty me-2" placeholder="Quantity Order" aria-label="Quantity">
+                <hr>
+                <button class="btn btn-success addorder-but" type="submit">Add Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
-
-
 
   </div>
 
