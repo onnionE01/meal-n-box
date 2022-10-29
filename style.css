@@ -79,18 +79,18 @@ p{
 }
 
 .fvendor {
-    padding-left: 120px;
-    padding-right: 120px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .fPrice{
     background-color: #61aca2c7;
     border-radius: 5px;
-    height: 100px;
+    height: 80px;
     justify-content: center;
     text-align: center;
     color: rgb(48, 47, 47);
-    padding: 3px;
+    padding-top: 5px;
 }
 
 .nav-button{
