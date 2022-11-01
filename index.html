@@ -17,11 +17,11 @@
 
   <!--for tiny slider from cdnjs.com-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" rel="stylesheet">
-
   <link href="style.css" rel="stylesheet">
   <link href="slider.css" rel="stylesheet">
   <link href="storeFeat.css" rel="stylesheet">
   <link href="product.css" rel="stylesheet">
+  <link href="screenres.css" rel="stylesheet">
 
 </head>
 
@@ -70,15 +70,14 @@
               <li class="nav-item">
                 <a class="nav-link active lMenuOpt" aria-current="page" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="favorites.html">Favorites</a>
-              </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle " href="menu.html" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Menu
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" onclick="changeMenu('fav')">My Favorites</a></li>
+                  <hr>
                   <li><a class="dropdown-item" onclick="changeMenu('best-seller')">Best Seller</a></li>
                   <hr>
                   <li><a class="dropdown-item" onclick="changeMenu('breakfast')">Breakfast</a></li>
@@ -92,7 +91,9 @@
                   <li><a class="dropdown-item" onclick="changeMenu('new')">What's New</a></li>
                 </ul>
               </li>
-
+              <li class="nav-item">
+                <a class="nav-link" href="vendors.html">Vendors</a>
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">

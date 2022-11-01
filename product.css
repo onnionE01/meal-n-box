@@ -2,6 +2,9 @@
     top: 100px;
     width: 1600px;
     margin: auto;
+    background-image: url('photo/wooden.jpeg');
+    background-attachment: fixed;
+    opacity: 0.80;
 }
 
 .menu-category {
@@ -18,8 +21,6 @@
     justify-content: center;
     align-items: center;
 }
-
-
 
 .menu-category1 {
     margin: 10px;
@@ -265,39 +266,3 @@
     background-image: url('Pmenu/Menu_030.jpg');
 }
 
-@media screen and (max-width:600px) {
-    .menu-category {
-        display: none
-    }
-
-    .product-img {
-        width: 160px;
-        height: 200px;
-    }
-    .addorder-but {
-        width: 200px;
-        height: 40px;
-        color: antiquewhite;
-        font-weight: bolder;
-    }
-    .order-qty {
-        border: none;
-        border-radius: 2px;
-        width: 200px;
-        height: 60px;
-        background-color: rgb(158, 240, 229);
-        text-align: center;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .product-list {
-        width: 90%;
-        background-color: rgb(115, 117, 117);
-        padding: 10px;
-        margin-top: 150px;
-        margin-left: 2%;
-
-        color: antiquewhite;
-    }
-}

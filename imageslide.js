@@ -23,7 +23,7 @@ let menuSlide=tns({
             items:4
         },
         360: {
-            items:3
+            items:3,
         }
     }
 })
