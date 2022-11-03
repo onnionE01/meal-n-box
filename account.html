@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-ico" href="my-icon.ico" />
+    <title>MEAL-N-BOX</title>
+
+    <link href="bootstrap-5.2.2/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-5.2.2/dist/css/bootstrap-utilities.css" rel="stylesheet">
+    <link href="bootstrap-5.2.2/dist/css/bootstrap-utilities.min.css" rel="stylesheet">
+    <link href="bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <!--for tiny slider from cdnjs.com-->
+    <link href="style.css" rel="stylesheet">
+    <link href="screenres.css" rel="stylesheet">
+    <link href="accountstyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <diV class="form-container">
+        <div class="customer-form" id="customerform">
+            <div class="close-form justify-content-end">
+                <img src="site-logo.png" height="70px" />
+                <button type="submit" class="btn-close btn-close-red close-btn"  role="button" aria-label="Close" onclick="history.back()"></button>
+            </div>
+            <div class="form-lbl">
+                <h3>CUSTOMER ACCOUNT REGISTRATION</h3>
+            </div>
+            <div class="detail-info">
+                <div>
+                <label for="recipient-name" class="col-form-label">Name:</label>
+                <br>
+                <input type="text" class="nfirst" id="recipient-name" placeholder="First Name">
+                <input type="text" class="nlast" id="recipient-name" placeholder="Last Name">
+                </div> 
+                <div>
+                    <label for="recipient-name" class="col-form-label">Contact Information:</label>
+                    <br>
+                    <input type="text" class="contact-num" id="contactNum" placeholder="Mobile Number">
+                    <input type="text" class="email-add" id="emailAdd" placeholder="Email Address">
+                    </div> 
+                <div>
+                    <label for="recipient-name" class="col-form-label">Address:</label>
+                    <br>
+                    <input type="text" class="house-num" id="houseNum" placeholder="House no./Building no.">
+                    <input type="text" class="street-name" id="streetAdd" placeholder="Street Address">
+                    <input type="text" class="brgy-name" id="brgyName" placeholder="Barangay">
+                    <input type="text" class="city-name" id="cityName" placeholder="City">
+                    <input type="text" class="prov-name" id="provName" placeholder="Province">
+                </div>
+                <div>
+                    <form action="/action_page.php">
+                        <br>
+                        <h6>Terms and Conditions</h6>
+                        <hr>
+                        <input type="checkbox" id="terms">
+                        <label for="vehicle2">I accept the terms and conditions and I have read the privacy policy.</label><br>
+                      </form>
+                      <hr>
+                      <button type="button" class="submit-btn"><b>Complete</b></button>
+                </div>
+
+            </div>
+        </div>
+    </diV>
+
+
+</body>
+
+</html>

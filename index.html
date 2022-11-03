@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +12,6 @@
   <link href="bootstrap-5.2.2/dist/css/bootstrap-utilities.min.css" rel="stylesheet">
   <link href="bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-
   <!--for tiny slider from cdnjs.com-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
@@ -100,9 +97,9 @@
                   Accounts
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Register</a></li>
-                  <li><a class="dropdown-item" href="#">Be a Partner</a></li>
-                  <li><a class="dropdown-item" href="#">Be a Rider</a></li>
+                  <li><a class="dropdown-item" href="account.html">Register</a></li>
+                  <li><a class="dropdown-item" href="account.html">Be a Partner</a></li>
+                  <li><a class="dropdown-item" href="account.html">Be a Rider</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -120,7 +117,7 @@
   </div>
 
   <!--Featured Meals slide-->
-  <div>
+  <div >
     <section id="slider" class="mealFeature">
       <div class="container">
         <div class="subcontainer">
@@ -474,6 +471,7 @@
 
   </div>
   </div>
+
   </div>
 
   <!--MY ORDER POP OVER-->
@@ -488,49 +486,62 @@
         </div>
         <div class="modal-body">
           <div class="container text-center vendor-feat">
-
             <div class="row per-row-prod">
               <div class="col order-first">
-                <span>#1</span>
+                <div class="center">
+                  <p>
+                  </p>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number" data-type="minus"data-field="quant[1]">
+                        <span class="glyphicon glyphicon-minus">-</span>
+                      </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="0" max="10">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                        <span class="glyphicon glyphicon-plus">+</span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
               </div>
               <div class="col">
-                <div class="Menu028 order-img">
+                <div class="Menu030 order-img">
                 </div>
-                <span>Maja Blanca</span>
-              </div>
-              <div class="col ">
-                <div class="addorder-div">
-                  <label class="myOrder" Id="addorder">
-                    1
-                  </label>
-                </div>
+                <span>Chicken Pochero</span>
               </div>
               <div class="col order-last">
                 <div class="addorder-div">
                   <label class="myOrder" Id="qty-order">
-                    80.00
+                    120.00
                   </label>
                 </div>
               </div>
             </div>
           </div>
+          <div>
+          <hr>
+          <label>Total Amount:</label><label name="myoder">120.00</label>
+          <hr>
+          </div>
           <form>
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <label for="recipient-name" class="col-form-label">Address:</label>
               <input type="text" class="form-control" id="recipient-name">
             </div>
             <div class="mb-3">
-              <label for="message-text" class="col-form-label">Message:</label>
+              <label for="message-text" class="col-form-label">Note:</label>
               <textarea class="form-control" id="message-text"></textarea>
             </div>
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Confirm Order</button>
         </div>
       </div>
     </div>
+
   </div>
 
   <footer class=" myfooter offcanvas-end">
@@ -554,5 +565,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 <script src="imageslide.js"></script>
 <script src="menu.js"></script>
-
+<script src="addminus.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 </html>
