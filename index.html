@@ -102,7 +102,7 @@
                   <li><a class="dropdown-item" href="account.html">Be a Rider</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item">
@@ -349,7 +349,7 @@
       <div class="col">
         <div class="slide eHov"">
         <div class=" vendor-img Vendor002">
-          <a href="#">CHECK MENU</a>
+          <a c>CHECK MENU</a>
         </div>
         <br>
         <div>
@@ -416,7 +416,7 @@
       <div class="col order-last">
         <div class="slide eHovr">
           <div class="mealtype-img desserts-meal">
-            <a href="#">CHECK MENU</a>
+            <a onclick="changeMenu('dessert')">CHECK MENU</a>
           </div>
           <br>
           <div>
@@ -427,7 +427,7 @@
       <div class="col">
         <div class="slide eHovr"">
           <div class=" mealtype-img lunch-meal">
-          <a href="#">CHECK MENU</a>
+          <a  onclick="changeMenu('lunch')">CHECK MENU</a>
         </div>
         <br>
         <div>
@@ -438,7 +438,7 @@
     <div class="col">
       <div class="slide eHovr">
         <div class="mealtype-img dinner-meal">
-          <a href="#">CHECK MENU</a>
+          <a onclick="changeMenu('dinner')">CHECK MENU</a>
         </div>
         <br>
         <div>
@@ -449,7 +449,7 @@
     <div class="col">
       <div class="slide eHovr">
         <div class="mealtype-img snacks-meal">
-          <a href="#">CHECK MENU</a>
+          <a onclick="changeMenu('snacks')">CHECK MENU</a>
         </div>
         <br>
         <div>
@@ -460,7 +460,7 @@
     <div class="col order-first">
       <div class="slide eHovr">
         <div class="mealtype-img breakfast-meal">
-          <a href="#">CHECK MENU</a>
+          <a href="#" onclick="changeMenu('breakfast')" >CHECK MENU</a>
         </div>
         <br>
         <div>
@@ -543,7 +543,23 @@
     </div>
 
   </div>
-
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">ABOUT US</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   <footer class=" myfooter offcanvas-end">
     <div class="divfooter">
       <span>follow us</span>
